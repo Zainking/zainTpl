@@ -1,0 +1,30 @@
+{
+  "name": "zain-tpl",
+  "version": "1.0.0",
+  "description": "a very simple template engine",
+  "main": "./lib/zainTpl.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "node ./node_modules/mocha/bin/mocha ./test/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zainking/zainTpl.git"
+  },
+  "keywords": [
+    "template",
+    "engine"
+  ],
+  "author": "ZainKing",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Zainking/zainTpl/issues"
+  },
+  "homepage": "https://github.com/Zainking/zainTpl#readme",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^4.0.1"
+  }
+}
