@@ -56,4 +56,4 @@ tested.
 
 License
 -------
-Handlebars.js is released under the MIT license.
+zainTpl.js is released under the MIT license.
