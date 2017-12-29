@@ -30,7 +30,16 @@ Full documentation and more examples are at floder 'simple'.
 
 Doc
 ---
+### zainTpl(template, data, isSafeMode)
+#### return
+* [String]Compiled string
 
+#### params
+* template: [String]Template string, where variables are wrapped with curly braces.
+* data: [Object]Compile the required data, and if the data is not found at compile time, the original template string will be used.
+* isSafeMode: [Bool]When this quantity is true or not filled in, the HTML character is escaped.
+
+#### examples
 Unit test
 ---------
 

@@ -13,7 +13,27 @@
     <p>Hello，I am {{ name }}，{{ info.age }} years old！</p>
   </template>
   <template id='tpl2'>
-    <p>let us render some html text init: {{ html }}</p>
+    let us render some html text init: {{ html }}
   </template>
+  <script src='../lib/zainTpl.js'></script>
+  <script>
+    var str1 = zainTpl(document.querySelector('#tpl1').innerHTML, {
+      name: 'zain',
+      info: {
+        sex: 'male',
+        age: '<span>21</span>'
+      }
+    }, true);
+    var tpl1str = document.createElement("div");
+    tpl1str.innerHTML = str1;
+    document.querySelector('#content').appendChild(tpl1str);
+
+    var str2 = zainTpl(document.querySelector('#tpl2').innerHTML, {
+      html: '<strong>Hello</strong><div style="color: #f00"> world<div>'
+    }, false);
+    var tpl2str = document.createElement("div");
+    tpl2str.innerHTML = str2;
+    document.querySelector('#content').appendChild(tpl2str);
+  </script>
 </body>
 </html>
