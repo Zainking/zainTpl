@@ -39,7 +39,6 @@ Doc
 * data: [Object]Compile the required data, and if the data is not found at compile time, the original template string will be used.
 * isSafeMode: [Bool]When this quantity is true or not filled in, the HTML character is escaped.
 
-#### examples
 Unit test
 ---------
 
